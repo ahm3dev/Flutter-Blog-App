@@ -76,6 +76,9 @@ class CreateAccountScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 180,
+            ),
             Align(
               alignment: Alignment.bottomCenter,
               child: Row(

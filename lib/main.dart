@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'Login.dart';
 import 'create_account.dart';
 
@@ -16,7 +15,6 @@ class Home extends StatelessWidget {
             image: DecorationImage(
           image: AssetImage(
             'assets/images/lens.png',
-            
           ),
           fit: BoxFit.cover,
         )),
@@ -25,11 +23,13 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
+                Spacer(),
                 Text(
                   'The Future of Photography & Unsplash',
                   style: TextStyle(
                       fontSize: 40.0, color: Colors.white, fontFamily: 'Rubik'),
                 ),
+                Spacer(),
                 Row(
                   children: [
                     Padding(
