@@ -1,4 +1,7 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import 'Login.dart';
 
 class CreateAccountScreen extends StatelessWidget {
   @override
@@ -18,8 +21,8 @@ class CreateAccountScreen extends StatelessWidget {
             textAlign: TextAlign.left,
             style: TextStyle(
               fontSize: 36.0, color: Colors.black, fontFamily: 'SFCompact')),
-              Text('Account',
-              textAlign: TextAlign.left,
+            Text('Account.',
+            textAlign: TextAlign.left,
             style: TextStyle(
               fontSize: 36.0, color: Colors.black, fontFamily: 'SFCompact')),
             SizedBox(
@@ -73,9 +76,40 @@ class CreateAccountScreen extends StatelessWidget {
                 ),
               ),
             ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  RichText(
+                    text: TextSpan(
+                      text: 'Already have an account?',
+                      style: TextStyle(fontSize: 16.0, color: Colors.black, fontFamily: 'SFCompact'),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: ' Sign in',
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context){
+                              return LoginScreen();
+                          
+                          }));
+                            },
+                          style: TextStyle(
+                            fontSize: 16.0, color: Colors.blue, fontFamily: 'SFCompact'
+                          )
+                          ),
+                ],
+              ),
+            ),
           ],),
         )
-      ),
-    );
+            ]),
+      )
+      )
+      );
   }
 }
