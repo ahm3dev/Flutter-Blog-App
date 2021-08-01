@@ -16,14 +16,19 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
               height: 80,
             ),
-            Text('Welcome',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-              fontSize: 36.0, color: Colors.black, fontFamily: 'SFCompact')),
-            Text('Back.',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-              fontSize: 36.0, color: Colors.black, fontFamily: 'SFCompact')),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Column(
+                children: [
+                  Text('Welcome\nBack.',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 36.0, color: Color(0xFF333333), fontFamily: 'SFCompact')),
+                  SizedBox(height: 10),
+                  Container(height: 2,width: 46, color: Color(0xFF3BBCF8),),
+                ],
+              ),
+            ),
             SizedBox(
               height: 30,
             ),
@@ -47,10 +52,17 @@ class LoginScreen extends StatelessWidget {
               height: 20,
             ),
 
-            Text('Forgot Password?',
-            textAlign: TextAlign.right,
-            style: TextStyle(
-              fontSize: 14.0, color: Colors.grey, fontFamily: 'SFCompact')),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Column(
+                children: [
+                  Text('Forgot Password?',
+                  textAlign: TextAlign.right,
+                  style: TextStyle(
+                    fontSize: 14.0, color: Colors.grey, fontFamily: 'SFCompact')),
+                ],
+              ),
+            ),
             
 
             SizedBox(
@@ -61,8 +73,8 @@ class LoginScreen extends StatelessWidget {
               child: Text('sign in'.toUpperCase()),
               style: TextButton.styleFrom(
                 primary: Colors.white,
-                backgroundColor: Colors.lightBlue[400],
-                minimumSize: Size(345, 55),
+                backgroundColor: Color(0xFF3BBCF8),
+                minimumSize: Size(385, 55),
                 textStyle: TextStyle(
                   fontSize: 16.0,
                   fontFamily: 'SFCompact',
@@ -83,8 +95,8 @@ class LoginScreen extends StatelessWidget {
               onPressed: () {},
               style: TextButton.styleFrom(
                 primary: Colors.white,
-                backgroundColor: Colors.blue[500],
-                minimumSize: Size(345, 55),
+                backgroundColor: Color(0xFF3BBCF8),
+                minimumSize: Size(385, 55),
                 textStyle: TextStyle(
                   fontSize: 16.0,
                   fontFamily: 'SFCompact',
@@ -111,8 +123,8 @@ class LoginScreen extends StatelessWidget {
               onPressed: () {},
               style: TextButton.styleFrom(
                 primary: Colors.white,
-                backgroundColor: Colors.blue[500],
-                minimumSize: Size(345, 55),
+                backgroundColor: Color(0xFF3B5998),
+                minimumSize: Size(385, 55),
                 textStyle: TextStyle(
                   fontSize: 16.0,
                   fontFamily: 'SFCompact',

@@ -17,14 +17,20 @@ class CreateAccountScreen extends StatelessWidget {
               SizedBox(
               height: 80,
             ),
-            Text('Create',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-              fontSize: 36.0, color: Colors.black, fontFamily: 'SFCompact')),
-            Text('Account.',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-              fontSize: 36.0, color: Colors.black, fontFamily: 'SFCompact')),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Column(
+                children: [
+                  Text('Create\nAccount.',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 36.0, color: Color(0xFF333333), fontFamily: 'SFCompact')),
+                  SizedBox(height: 10),
+                  Container(height: 2,width: 46, color: Color(0xFF3BBCF8),),
+                ],
+              ),
+            ),
+            
             SizedBox(
               height: 30,
             ),
@@ -68,8 +74,8 @@ class CreateAccountScreen extends StatelessWidget {
               child: Text('create account'.toUpperCase()),
               style: TextButton.styleFrom(
                 primary: Colors.white,
-                backgroundColor: Colors.lightBlue[400],
-                minimumSize: Size(345, 55),
+                backgroundColor: Color(0xFF3BBCF8),
+                minimumSize: Size(385, 55),
                 textStyle: TextStyle(
                   fontSize: 16.0,
                   fontFamily: 'SFCompact',
