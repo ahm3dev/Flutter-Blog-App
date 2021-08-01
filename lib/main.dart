@@ -72,7 +72,7 @@ class Home extends StatelessWidget {
                       style: TextButton.styleFrom(
                         primary: Colors.white,
                         backgroundColor: Colors.lightBlue[400],
-                        minimumSize: Size(182.38, 55),
+                        minimumSize: Size(180, 55),
                         textStyle: TextStyle(
                           fontSize: 16.0,
                           fontFamily: 'SFCompact',
