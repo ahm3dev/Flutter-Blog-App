@@ -12,9 +12,10 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
+          
             image: DecorationImage(
           image: AssetImage(
-            'assets/images/lens.png',
+            'assets/images/lenscut.png',
           ),
           fit: BoxFit.cover,
         )),
