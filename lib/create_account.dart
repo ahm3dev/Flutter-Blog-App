@@ -20,6 +20,7 @@ class CreateAccountScreen extends StatelessWidget {
             Align(
               alignment: Alignment.topLeft,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Create\nAccount.',
                   textAlign: TextAlign.left,

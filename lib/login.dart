@@ -19,6 +19,7 @@ class LoginScreen extends StatelessWidget {
             Align(
               alignment: Alignment.topLeft,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Welcome\nBack.',
                   textAlign: TextAlign.left,
