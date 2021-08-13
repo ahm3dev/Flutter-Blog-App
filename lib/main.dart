@@ -12,12 +12,15 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          
             image: DecorationImage(
           image: AssetImage(
             'assets/images/lenscut.png',
           ),
           fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+            Colors.black.withOpacity(0.3),
+            BlendMode.darken,
+            )
         )),
         child: Center(
           child: Container(

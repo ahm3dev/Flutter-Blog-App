@@ -2,6 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterapp_1/create_account.dart';
 
+import 'home.dart';
+
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -70,7 +72,16 @@ class LoginScreen extends StatelessWidget {
               height: 25,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context){
+                              return HomeScreen();
+                            }
+                          )
+                        );
+                      },
               child: Text('sign in'.toUpperCase()),
               style: TextButton.styleFrom(
                 primary: Colors.white,
